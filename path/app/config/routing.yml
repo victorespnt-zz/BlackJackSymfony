@@ -1,0 +1,13 @@
+casino_bj:
+    resource: "@CasinoBJBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+blackjack_game:
+    path:    /game
+    defaults: { _controller: CasinoBJBundle:Game:play }
+    requirements:
+        _method:	GET
+
+
+
